@@ -1,7 +1,7 @@
 <template>
   <div class="page-wrapper">
     <div class="container mt-5 bg-white shadow p-4 rounded">
-      <h2 class="mb-4 text-center">Login</h2>
+      <h2 class="mb-4 text-center">User Login</h2>
       <form @submit.prevent="login">
         <div class="form-group mb-3">
           <label for="username">Username</label>
@@ -79,9 +79,14 @@ export default {
 
 .container {
   max-width: 500px;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white */
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+
 </style>

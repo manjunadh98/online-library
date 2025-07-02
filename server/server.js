@@ -6,7 +6,7 @@ const db = require('./models');
 const authRoutes = require('./routes/auth.routes');
 const bookRoutes = require('./routes/book.routes');
 const borrowRoutes = require('./routes/borrow.routes');
-
+const adminRoutes = require('./routes/admin.routes');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -18,7 +18,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/books', bookRoutes);
 app.use('/api/borrow', borrowRoutes);
-
+app.use('/api/admin', adminRoutes);
 // Database Sync and Server Start
 db.sequelize.sync().then(() => {
   console.log('Database synced');
