@@ -1,0 +1,46 @@
+# =========================
+# Node.js (Backend)
+# =========================
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+logs/
+*.log
+
+# Database
+*.sqlite
+*.db
+*.sql
+*.dump
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# =========================
+# Vue.js (Frontend)
+# =========================
+# Vue build output
+/dist
+/node_modules
+/.env*
+/coverage
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Production files
+*.local
+*.cache
+
+# =========================
+# Git
+# =========================
+.git/

@@ -1,15 +1,15 @@
-# Ignore node_modules and environment files
+# Node.js
 node_modules/
 .env
-dist/
-build/
-.DS_Store
-
-# VSCode settings
-.vscode/
 
 # Logs
+logs
 *.log
 
-# OS files
-Thumbs.db
+# Build
+dist/
+build/
+
+# PostgreSQL
+*.sql
+*.dump
